@@ -1,0 +1,216 @@
+/* NOTAS:
+    -buscar que es el gradient para que la paleta de colores vaya cambiando de color
+*/
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+*{
+    /* Eliminamos los estilos por defecto */
+    margin: 0;  /* margen exterior */
+    padding: 0; /* espacio entre el contenido y el borde */
+    box-sizing: border-box; /* Para que los elementos NO se salgan del contenedor */
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+body{
+   
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    background-color: #47504a;
+    display:flex;
+    /* justify-content: space-between; */ 
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+    padding: 5px 5%; /* 5 arriba y abajo - 10 a los lados */
+    color: aliceblue;
+
+    
+}
+
+/* ****************** LOGO ***************************** */
+
+.header .logo{
+    cursor: pointer; /* el cursor al pasar sobre el logo es una manito */
+    margin-right:auto;
+}
+
+.header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+
+.header .logo img:hover{ /* Efecto sobre la imagen */
+    transform: scale(1.2);
+}
+.header .logo h5{
+    display: inline-block;
+}
+/* ****************************************************** */
+
+/* **************** MENU DE NAVEGACION ****************** */
+.header .nav-links{
+    
+    list-style: none; /* para que no se vean los puntos */
+}
+
+.header .nav-links li{
+    display:inline-block; /* cambia de estar en bloque a estar en linea */
+    padding: 0px 7px;
+    margin-top: 15px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 400;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.header .nav-links a:hover{
+    color: rgb(36, 131, 29);
+
+}
+/* .header .btn button{
+    margin-left: 20px; 
+    font-weight: 700;
+    color: antiquewhite;
+    padding: 9px 25px;
+    background-color: aqua;
+    border: none; sacarle el borde que viene por defecto 
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3;
+} */
+
+/* .header .btn button:hover{
+    background-color: antiquewhite;
+    color: blueviolet;
+    transform: scale(1.1);
+} */
+
+/* ************************************************************** */
+
+/* ********************* IMAGEN DE PRESENTACION **************** */
+
+#fondo{
+    background:url("imagenes/hawaii.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* para que tenga todo el tamaño */
+    background-position: center center;
+    position: relative;
+    height: calc(100vh - 80px); /* para que ocupe toda la pantalla y le reste lo que ocupa el menu */
+
+}
+#fondo:before{
+    content:'';
+	position: absolute; 
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.texto-imagen{
+    position: absolute;
+    top: 320px;
+    right:8rem;
+    bottom: 200px;
+    float: right;
+    text-align: right;
+    color: aliceblue;
+}
+.boton-imagen{
+    background-color: transparent;
+    color: #f0f8ff;
+    padding: 5px 10px;
+    margin: auto solid;
+    border-radius: 5px;
+    border-style:solid;
+    border-color: #f0f8ff;
+    margin-right: .5rem;
+
+}
+.boton-imagen:hover{
+    color:black;
+    background-color: #f0f8ff;
+    
+}
+.texto-imagen h1{
+    font-size: 2rem;
+}
+
+/* ******************************************************** */
+
+/* **************** ORADORES ****************************** */
+.oradores {
+    text-align: center;
+    margin-top: 10px;
+    
+  
+}
+.oradores h4{
+    font-weight: bolder;
+}
+.oradores p{
+    font-size: 13px;
+}
+
+.tarjetas{
+    margin-bottom: 2rem;
+}
+/* ********************************************************* */
+
+/* *************** PROXIMA ACTIDAD ************************* */
+.actividad{
+    margin: 2rem;
+}
+.actividad-img img{
+    height: 25rem;
+    
+}
+.texto-bsas{
+    background-color: #514e4e;
+}
+.texto-bsas h4{
+    color: #f0f8ff;
+    font-weight:bold;
+    margin-top: .5rem;
+}
+
+.texto-bsas p{
+    color: white;
+}
+
+/* **********FORMULARIO DE CONTACTO ****************** */
+.text-area{
+    margin-top: .5rem;
+}
+/* ************* FOOTER ********************************** */
+footer{
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: rgba(32, 30, 62, 0.862);
+    color: white;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
